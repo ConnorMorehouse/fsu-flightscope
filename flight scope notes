@@ -1,0 +1,34 @@
+variables:
+pitch_number = pitch number in game
+pitch_rpm = total pitch spin (rpm)
+pitch_spin_direction = degree equivalent of spin tilt (degrees)
+pitch_spin_tilt = spin axis in time equivalent
+pitch_vb = absolute pitch vertical break (in)
+pitch_vb_ind = relative (spin inducded) vertical break (in)
+pitch_hb = absolute horizontal break (in)
+plate_z = height of ball in strike zone (ft)
+plate_x = left/right position of ball in strike zone, 0 is middle of plate (ft)
+pfx_x = movement at 40 ft, inches (?)
+pfx_z = movement at 40 ft, inches (?)
+x0 = location at 50 ft, feet
+y0 = location at 50 ft, feet
+z0 = location at 50 ft, feet
+vx0 = velo at 50 ft, ft/s
+vy0 = velo at 50 ft, ft/s
+vz0 = velo at 50 ft, ft/s
+ax0 = accel at 50 ft, ft/s/s
+ay0 = accel at 50 ft, ft/s/s
+px = catcher view strike zone, ft  
+pz = catcher view strike zone, ft 
+
+notes:
+
+use px, pz have less na's than plate_x, plate_z but only for pitches with an extreme location value. so still use plate_x, plate_z
+
+very strong relation between mvmt_diff (pitch_vb_ind - pitch_vb) and pitch speed (power law?)
+
+spin direction and tilt are same, 12:00 = 180 degrees 
+
+pitch_vb a measure, pitch_vb_ind infered?
+
+vx0, vy0, vz0 in feet per second 
